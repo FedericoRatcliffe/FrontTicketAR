@@ -1,0 +1,160 @@
+<!-- <div class="loginClass">
+
+
+
+    <h2>Iniciar sesión</h2>
+    <div *ngIf="message" class="alert alert-danger">{{ message }}</div>
+
+
+
+    <form (ngSubmit)="onSubmit()">
+
+        
+        <div class="form-group">
+            <label for="username">Nombre:</label>
+            <input type="text" class="form-control" id="firstname" [(ngModel)]="registerEntity.firstname" name="username" required>
+        </div>
+
+
+        
+        <div class="form-group">
+            <label for="username">Apellido:</label>
+            <input type="text" class="form-control" id="lastname" [(ngModel)]="registerEntity.lastname" name="lastname"
+                required>
+        </div>
+
+
+        
+        <div class="form-group">
+            <label for="username">Genero:</label>
+            <input type="text" class="form-control" id="genre" [(ngModel)]="registerEntity.genre" name="lastname" required>
+        </div>
+
+
+        
+        <div class="form-group">
+            <label for="username">Email:</label>
+            <input type="text" class="form-control" id="email" [(ngModel)]="registerEntity.email" name="email" required>
+        </div>
+
+
+
+
+        
+        <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" class="form-control" id="password" [(ngModel)]="registerEntity.password" name="password"
+                required>
+        </div>
+
+
+        
+        <div class="form-group">
+            <label for="username">Dni Type:</label>
+            <input type="text" class="form-control" id="dniType" [(ngModel)]="registerEntity.dniType" name="dni" required>
+        </div>
+
+        
+        <div class="form-group">
+            <label for="username">Dni:</label>
+            <input type="text" class="form-control" id="dni" [(ngModel)]="registerEntity.dni" name="dni" required>
+        </div>
+
+
+
+
+
+        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+    </form>
+
+
+
+
+</div> -->
+
+
+
+
+<mat-divider class="mb-3"></mat-divider>
+
+<div class="grid pru">
+
+    <div class="col-12 sm:col-6">
+        <mat-card>
+            <mat-card-content>
+
+                <div class="grid">
+
+                    <div class="">
+                        <mat-label class="col-12 sm:col-6">NOMBRE</mat-label>
+                        <mat-form-field class="col-12 sm:col-6">
+                            <mat-label>Nombre</mat-label>
+                            <input matInput type="text" [(ngModel)]="registerEntity.firstname" required />
+                        </mat-form-field>
+    
+                        <mat-label class="col-12 sm:col-6">APELLIDO</mat-label>
+                        <mat-form-field class="col-12 sm:col-6">
+                            <mat-label>Apellido</mat-label>
+                            <input matInput type="text" [(ngModel)]="registerEntity.lastname" required />
+                        </mat-form-field>
+                    </div>
+
+
+                    <mat-label class="col-12 sm:col-6">GENERO</mat-label>
+                    <mat-form-field class="col-12">
+                        <mat-label>Genero</mat-label>
+                        <!-- <mat-select [(ngModel)]="registerEntity.genre" required="">
+                            <mat-option>
+                            </mat-option>
+                        </mat-select> -->
+                        <input matInput type="text" [(ngModel)]="registerEntity.genre" required />
+                    </mat-form-field>
+
+
+                    <mat-label class="col-12 sm:col-6">EMAIL</mat-label>
+                    <mat-form-field class="col-12">
+                        <mat-label>Email</mat-label>
+                        <input matInput type="email" [(ngModel)]="registerEntity.email" required />
+                    </mat-form-field>
+
+
+
+                    <mat-label class="col-12 sm:col-6">CONTRASEÑA</mat-label>
+                    <mat-form-field class="col-12">
+                        <mat-label>Contraseña:</mat-label>
+                        <input matInput type="password" [(ngModel)]="registerEntity.password" required />
+                    </mat-form-field>
+
+
+
+                    <mat-label class="col-12 sm:col-6">TIPO DE DOCUMENTO</mat-label>
+                    <mat-form-field class="col-12">
+                        <mat-label>Documento</mat-label>
+                        <!-- <mat-select  [(ngModel)]="registerEntity.dniType" required="">
+                            <mat-option>
+                            </mat-option>
+                        </mat-select> -->
+                        <input matInput type="text" [(ngModel)]="registerEntity.dniType" required />
+                    </mat-form-field>
+
+                    <mat-label class="col-12 sm:col-6">NUMERO DOCUMENTO</mat-label>
+                    <mat-form-field class="col-12">
+                        <mat-label>Numero</mat-label>
+                        <input matInput type="password" [(ngModel)]="registerEntity.dni" required/>
+                    </mat-form-field>
+
+
+                </div>
+
+                <div class="flex justify-content-between">
+                    <button mat-flat-button color="warn" (click)="onSubmit()">
+                        <mat-icon>save</mat-icon>
+                        Guardar
+                    </button>
+                </div>
+
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+</div>
