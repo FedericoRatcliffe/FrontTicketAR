@@ -30,10 +30,10 @@ export class RegisterComponent {
   
   constructor(private authService: AuthService, private fb: FormBuilder) { }
 
-
+  
   onSubmit(): void {
 
-    this.authService.register(this.registerEntity).subscribe(
+    ( this.authService.register(this.registerEntity)).subscribe(
       data => {
         console.log(data);
         this.message = 'Inicion de sesion exitoso!';

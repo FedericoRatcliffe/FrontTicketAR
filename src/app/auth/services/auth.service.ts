@@ -13,12 +13,17 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
   
-
-  register(registerEntity: RegisterEntity): Observable<any> {
-    return this.http.post(`${this.baseUrl}/auth/register`, registerEntity);
+  
+  register(registerEntity: RegisterEntity): Observable<RegisterEntity> {
+    return this.http.post<RegisterEntity>(`${this.baseUrl}/auth/register`, registerEntity);
   }
 
-  login(registerEntity: RegisterEntity): Observable<any> {
-    return this.http.post(`${this.baseUrl}/auth/login`, registerEntity, { withCredentials: false});
+
+  login(registerEntity: RegisterEntity): Observable<RegisterEntity> {
+    return this.http.post<RegisterEntity>(`${this.baseUrl}/auth/login`, registerEntity, { withCredentials: false});
   }
+
+
+
+  
 }

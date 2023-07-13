@@ -1,0 +1,30 @@
+.navColor {
+    background-color: black !important;
+}
+
+.list {
+    list-style: none;
+}
+
+.containerNav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+
+.logoClass {
+    width: 100px;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+}

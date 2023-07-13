@@ -1,0 +1,27 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #0e0e0e;
+    color: #e2e8f0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #e2e8f0;
+}
+
+footer a:hover {
+    color: #4f46e5;
+}
